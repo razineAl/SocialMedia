@@ -303,3 +303,7 @@ font-weight: 500;
   padding: 20px 0;
   
 }
+[contenteditable='true']:focus{
+  outline: none;
+
+}

@@ -42,7 +42,7 @@ function Post() {
           <h1 onClick={()=>{updatePost()}}>{post.title}</h1>
         </div> 
         <div className="postText" onClick={updatePost}>
-          {post.postText}
+          <p contentEditable={true}>{post.postText}</p>          
         </div>
         <div className="pied">
           {post.username}
