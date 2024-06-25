@@ -13,7 +13,6 @@ import Profile from './pages/Profile';
 
 
 function App() {
-
   const [authState,setAuthState] = useState({username:'',id:'',status:false});
 
 
@@ -29,7 +28,6 @@ function App() {
     fetchData();
   },[])
   const handleLogOut = ()=>{
-
     localStorage.removeItem('accessToken');
     setAuthState({username:'',id:'',status:false});
 
@@ -55,7 +53,7 @@ function App() {
                   <Link to='/' className='Liens'>Go home</Link>
                   <Link to='/createpost' className='Liens'>Create post</Link>
                   <h1>{authState.username}</h1>
-                  <button id='logout' onClick={handleLogOut}>Logout</button>                  
+                  <Link to='/registration' id='logout' onClick={handleLogOut}>Logout</Link>                  
                 </>
                 
               )
